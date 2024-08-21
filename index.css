@@ -142,6 +142,9 @@ body {
   width: 104px;
   height: 243px;
   object-fit: cover;
+  border-radius: 15px;
+  border: 5px solid #000;
+  background: url(plantGif.gif) lightgray 50% / cover no-repeat;
 }
 .gifsplash-screen-wrapper {
   position: absolute;
