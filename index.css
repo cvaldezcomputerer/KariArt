@@ -3,7 +3,7 @@ body {
   line-height: normal;
 }
 
-.home-child {
+.showcase-left {
   position: absolute;
   top: 1115px;
   left: 65px;
@@ -11,7 +11,7 @@ body {
   width: 430px;
   height: 373px;
 }
-.home-item {
+.showcase-middle {
   position: absolute;
   top: 1115px;
   left: 541px;
@@ -19,7 +19,7 @@ body {
   width: 430px;
   height: 373px;
 }
-.home-inner {
+.showcase-right {
   position: absolute;
   top: 1115px;
   left: 1022px;
@@ -27,63 +27,24 @@ body {
   width: 430px;
   height: 373px;
 }
-.kariv {
+
+.gifsplash-screen-icon {
+  border-radius: 15px;
+  width: 104px;
+  height: 243px;
+  border: 5px solid #000;
+  background: url(plantGif.gif) lightgray 50% / cover no-repeat;
+}
+
+.image-71-icon {
   position: absolute;
-  top: 64px;
-  left: 65px;
-  font-size: 50px;
-  display: inline-block;
-  width: 168px;
-  height: 59px;
+  top: 1184px;
+  left: 1183px;
+  width: 116px;
+  height: 251px;
+  object-fit: cover;
 }
-.karina-valdez {
-  font-family: "Yeseva One";
-}
-.im-karina-valdez-container {
-  position: absolute;
-  top: 431px;
-  left: 785px;
-  display: inline-block;
-  width: 523px;
-  height: 176px;
-  font-family: Laila;
-}
-.welcome-to-my {
-  position: absolute;
-  top: 369px;
-  left: 785px;
-  font-size: 40px;
-  white-space: pre-wrap;
-  display: inline-block;
-  width: 539px;
-  height: 55px;
-}
-.my-works {
-  position: absolute;
-  top: 922px;
-  left: 60px;
-  font-size: 40px;
-  display: inline-block;
-  width: 220px;
-  height: 47px;
-}
-.ive-always-been {
-  position: absolute;
-  top: 534px;
-  left: 785px;
-  font-family: Laila;
-  white-space: pre-wrap;
-  display: inline-block;
-  width: 512px;
-  height: 240px;
-}
-.iphone-12-mockup {
-  position: absolute;
-  top: 1162px;
-  left: 196px;
-  width: 168px;
-  height: 344px;
-}
+
 .main-icon {
   position: absolute;
   top: 1215px;
@@ -134,34 +95,7 @@ body {
   height: 454px;
   object-fit: cover;
 }
-.gifsplash-screen-icon {
-  position: absolute;
-  top: 63px;
-  left: 162px;
-  border-radius: 15px;
-  width: 104px;
-  height: 243px;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 5px solid #000;
-  background: url(plantGif.gif) lightgray 50% / cover no-repeat;
-}
-.gifsplash-screen-wrapper {
-  position: absolute;
-  top: 1119px;
-  left: 67px;
-  width: 428px;
-  height: 369px;
-  overflow: hidden;
-}
-.image-71-icon {
-  position: absolute;
-  top: 1184px;
-  left: 1183px;
-  width: 116px;
-  height: 251px;
-  object-fit: cover;
-}
+
 .home {
   width: 100%;
   position: relative;
@@ -172,4 +106,55 @@ body {
   font-size: 30px;
   color: #000;
   font-family: "Yeseva One";
+}
+.ive-always-been {
+  position: absolute;
+  top: 534px;
+  left: 785px;
+  font-family: Laila;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 512px;
+  height: 240px;
+}
+
+.my-works {
+  position: absolute;
+  top: 922px;
+  left: 60px;
+  font-size: 40px;
+  display: inline-block;
+  width: 220px;
+  height: 47px;
+}
+.kariv {
+  position: absolute;
+  top: 64px;
+  left: 65px;
+  font-size: 50px;
+  display: inline-block;
+  width: 168px;
+  height: 59px;
+}
+.karina-valdez {
+  font-family: "Yeseva One";
+}
+.im-karina-valdez-container {
+  position: absolute;
+  top: 431px;
+  left: 785px;
+  display: inline-block;
+  width: 523px;
+  height: 176px;
+  font-family: Laila;
+}
+.welcome-to-my {
+  position: absolute;
+  top: 369px;
+  left: 785px;
+  font-size: 40px;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 539px;
+  height: 55px;
 }
