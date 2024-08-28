@@ -3,6 +3,11 @@ body {
   line-height: normal;
 }
 
+.showcase {
+  width: 430px;
+  height: 373px;
+}
+
 #title {
   color: #000;
   font-family: "Yeseva One";
@@ -14,7 +19,7 @@ body {
 
 #welcome-title {
   color: #000;
-  font-family: "Yeseva One";
+  font-family: "Arial";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -32,23 +37,17 @@ body {
 
 #my-works {
   font-size: 40px;
-  font-family: "Yeseva One";
+  font-family: "Arial";
 }
 
 #showcase-left {
   background-color: #e4e1ba;
-  width: 430px;
-  height: 373px;
 }
 #showcase-middle {
   background-color: #ede7ff;
-  width: 430px;
-  height: 373px;
 }
 #showcase-right {
   background-color: #f5f8ff;
-  width: 430px;
-  height: 373px;
 }
 
 #left-phone-gif {
