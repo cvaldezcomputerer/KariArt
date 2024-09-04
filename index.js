@@ -81,12 +81,12 @@ for (let i = 0; i < hoverElements.length; i++) {
       case "showcase-left":
         content.innerHTML =
           '<div id="showcase-left" class="d-flex col-12 justify-content-center align-items-center">' +
-          '<div id="left-phone-gif"><p id="left-phone-text">let’s start your<br>study session!</p></div>' +
+          '<div class="left-phone-gif"><p id="left-phone-text-showcase">let’s start your<br>study session!</p></div>' +
           "</div>" +
           '<div class=" px-5 mt-5">' +
           '<p class="showcase-title">Meet Buddy</p>' +
           '<p class="showcase-words">Buddy is a mobile app created during my masters program. It aims to help relieve exam induced stress and anxiety by using mixed reality. </p>' +
-          '<button class="btn align-self-start showcase-button">View Project</button>' +
+          '<a href="project1.html" <button class="btn align-self-start showcase-button">View Project</button></a>' +
           "</div>";
         break;
       default:

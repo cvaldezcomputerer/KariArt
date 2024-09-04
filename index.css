@@ -1,6 +1,7 @@
-body {
+body,
+html {
   margin: 0;
-  line-height: normal;
+  overflow-x: hidden;
 }
 
 .popup-overlay {
@@ -72,12 +73,12 @@ body {
   line-height: normal;
 }
 
-#title {
+.title {
   color: #000;
-  font-family: "Arial";
+  font-family: "Lato";
   font-size: 50px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
 }
 
@@ -126,7 +127,7 @@ body {
   border-color: #f5f8ff;
 }
 
-#left-phone-gif {
+.left-phone-gif {
   border-radius: 15px;
   position: relative;
   width: 104px;
@@ -147,22 +148,131 @@ body {
   object-fit: cover;
 }
 
-#left-phone-text {
+#left-phone-text-showcase {
   border-radius: 64px;
-  background: #efd194;
-  position: absolute; /* Position this div absolutely within its parent */
-  top: 215px; /* Adjust these values as needed */
-  left: -80px;
+  background: #f6d388;
   color: #000;
-  font-family: "Lato";
-  font-size: 10px;
+  font-family: Lato;
+  font-size: 0.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 120px;
-  height: 50px;
+  width: 120%;
+  height: 20%;
   text-align: center;
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+  transform: translate(-5rem, 13rem);
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.left-phone-text {
+  position: absolute;
+  border-radius: 64px;
+  background: #f6d388;
+  color: #000;
+  font-family: Lato;
+  font-size: 3vh;
+  font-weight: 400;
+  width: 8em;
+  height: 4em;
+
+  text-align: center;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  /* transform: translate(-8rem, 28rem); */
+  padding-left: 1em;
+  padding-right: 1em;
+  bottom: -3em; /* Position it at the bottom */
+  left: -5em; /* Position it at the left */
+}
+
+#myWorksText {
+  color: #000;
+  font-family: "Laila";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#project1Top {
+  background: linear-gradient(to bottom, #e4e1ba 95%, transparent 50%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#topWords {
+  display: flex;
+  justify-content: space-between; /* Space out the text elements */
+  align-items: center; /* Center the text vertically */
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color: #6fb7ff;
+  border-style: dashed; */
+}
+
+#project1TopContent {
+  /* border-style: dashed;  - for testing*/
+  display: grid;
+  grid-template-columns: fit-content(100px) 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image text";
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 14em;
+  align-items: center;
+}
+
+.left-image {
+  grid-area: image;
+  height: 65vh;
+  width: 27vh;
+  border-radius: 30px;
+  border: 0.6em solid #000;
+  background: url(plantGif.gif) lightgray 50% / cover no-repeat;
+  position: relative;
+}
+
+.right-text {
+  grid-area: text;
+  align-content: center;
+  color: #000;
+  font-family: "Lato";
+  line-height: normal;
+  padding-right: 20%;
+  margin-left: 15%;
+}
+
+#project1TopPlant {
+  background: url(plantHi.gif) 50% / cover no-repeat;
+  width: 22em;
+  height: 22.5em;
+  transform: rotate(-0.226deg);
+  align-self: flex-end;
+  margin-right: 10em;
+  margin-top: -8em;
+  margin-bottom: 0;
+}
+
+#project1Title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+#project1Description {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+#project1SecondSection {
+  background: #ffffff;
+  height: 7480px;
 }
