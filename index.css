@@ -4,6 +4,16 @@ html {
   overflow-x: hidden;
 }
 
+li {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 0.25rem; /* Remove bottom margin */
+}
+
+ul {
+  margin-top: 0;
+}
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -76,7 +86,7 @@ html {
 .title {
   color: #000;
   font-family: "Lato";
-  font-size: 50px;
+  font-size: 6vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -152,11 +162,11 @@ html {
   border-radius: 64px;
   background: #f6d388;
   color: #000;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 0.6rem;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
+
   width: 120%;
   height: 20%;
   text-align: center;
@@ -192,7 +202,7 @@ html {
 #myWorksText {
   color: #000;
   font-family: "Laila";
-  font-size: 35px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -212,6 +222,7 @@ html {
   align-items: center; /* Center the text vertically */
   margin-left: 5%;
   margin-right: 5%;
+  flex: auto;
   /* background-color: #6fb7ff;
   border-style: dashed; */
 }
@@ -240,37 +251,118 @@ html {
 
 .right-text {
   grid-area: text;
-  align-content: center;
   color: #000;
   font-family: "Lato";
   line-height: normal;
-  padding-right: 20%;
   margin-left: 15%;
 }
 
 #project1TopPlant {
   background: url(plantHi.gif) 50% / cover no-repeat;
-  width: 22em;
-  height: 22.5em;
+  width: 22vw;
+  height: 22.5vw;
   transform: rotate(-0.226deg);
   align-self: flex-end;
   margin-right: 10em;
   margin-top: -8em;
   margin-bottom: 0;
+  flex-shrink: 1;
 }
 
 #project1Title {
-  font-size: 45px;
+  font-size: 2.8vw;
   font-weight: 700;
   margin-bottom: 5%;
 }
-#project1Description {
-  font-size: 30px;
-  font-weight: 500;
+.project1Description {
+  font-size: 2vw;
+  font-weight: 400;
   margin-top: 0px;
+  flex: auto;
 }
 
-#project1SecondSection {
+#project1MiddleSection {
   background: #ffffff;
   height: 7480px;
+}
+
+#project1MiddleSectionContent {
+  font-family: "Lato";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 14em;
+  padding-right: 8em;
+}
+
+.project1Heading {
+  color: #000;
+  font-size: 2.25vw;
+  font-weight: 700;
+  flex-shrink: 1;
+}
+
+#personDataImage {
+  align-self: center;
+  margin-block: 2rem;
+  width: 55vw;
+  flex: auto;
+}
+
+.listTitle {
+  color: #000;
+  font-size: 2.25vw;
+  font-weight: 700;
+  flex-shrink: 1;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+}
+
+#project1MiddleSectionImage {
+  width: 50vw;
+  align-self: center;
+  flex: auto;
+}
+
+#project1GameSectionVisials {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  flex: auto;
+}
+#projext1GameSectionVisialphone {
+  width: 15vw;
+  position: relative;
+  box-shadow: #000;
+}
+#projext1GameSectionVisialphoneGif {
+  width: 7vw;
+  position: absolute;
+  transform: translate(4rem, -0.5rem);
+}
+.project1GameSectionVisialsText {
+  text-align: center;
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+.projext1GameSectionVisialImg {
+  width: 11vw;
+}
+
+#project1GameSectionVisials2 {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex: auto;
+  width: 100%;
+  gap: 4rem;
+}
+
+.projext1GameSectionVisials2Img {
+  width: 15vw;
 }
