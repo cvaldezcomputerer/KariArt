@@ -2,6 +2,7 @@ body,
 html {
   margin: 0;
   overflow-x: hidden;
+  font-family: "Lato";
 }
 
 li {
@@ -209,8 +210,7 @@ ul {
 }
 
 #project1Top {
-  background: linear-gradient(to bottom, #e4e1ba 95%, transparent 50%);
-  min-height: 100vh;
+  background: #ebebeb;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -281,22 +281,16 @@ ul {
   flex: auto;
 }
 
-#project1MiddleSection {
-  background: #ffffff;
-  height: 7480px;
-}
-
+/* first projext css */
 #project1MiddleSectionContent {
-  font-family: "Lato";
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-left: 14em;
-  padding-right: 8em;
+  padding-left: 19rem;
+  padding-right: 13rem;
+  background: #ffffff;
+  margin-bottom: 4rem;
 }
-
 .project1Heading {
   color: #000;
   font-size: 2.25vw;
@@ -364,5 +358,140 @@ ul {
 }
 
 .projext1GameSectionVisials2Img {
-  width: 15vw;
+  width: 13.8125rem;
+  height: 29.0625rem;
+  border-radius: 0.9375rem;
+  border: 5px solid #000;
+}
+
+#project1BulletPoints {
+  margin-top: 8rem;
+  padding-left: 4rem;
+  flex: auto;
+  text-indent: -1.5rem;
+}
+
+/* second to last sections */
+#project1secondToLastDiagram {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.7fr; /* 3 columns, all atleast 300px wide */
+  grid-auto-rows: 1fr 1fr 1fr;
+  /* rows are atleast 100 tall up to auto tall */
+  grid-template-areas:
+    "topT topT topp"
+    "midP midT midT"
+    "botPics botPics botPics";
+
+  align-items: center;
+  margin-left: -3rem; /*since tis section sticks out a bit*/
+}
+.project1secondToLastDiagramImg {
+  /*any images will fill the entire container, without cropping it.*/
+  width: 22rem;
+  object-fit: cover;
+  object-position: center;
+}
+#project1secondToLastDiagramTopText {
+  grid-area: topT; /* remmeber not to use top since its a keyword and messes everything up*/
+  /* align-self: center; */
+  justify-self: end;
+}
+#project1secondToLastDiagramTopText p {
+  padding-right: 4rem;
+}
+#project1secondToLastDiagramTopPic {
+  grid-area: topp; /* remmeber not to use top since its a keyword and messes everything up*/
+  /* justify-self: end; */
+  justify-self: center;
+}
+
+#project1secondToLastDiagramMidPic {
+  grid-area: midP;
+}
+#project1secondToLastDiagramMidText {
+  grid-area: midT;
+  /* align-self: center; */
+}
+#project1secondToLastDiagramBot {
+  grid-area: botPics;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project1secondToLastDiagramBotFlexItem {
+  width: 20rem;
+  object-fit: contain;
+}
+
+.lineUnderP {
+  border-bottom-style: solid;
+  padding-bottom: 2rem;
+  font-size: 1.875rem;
+  width: fit-content;
+}
+
+/*-------------------- second to last section------------------------- */
+#project1BottomSectionFlex {
+  background: #e0dedb;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+#project1BottomSectionGrid1 {
+  display: grid;
+  grid-template-columns: 13rem 13rem; /* 3 columns, all atleast 300px wide */
+  grid-auto-rows: auto;
+  /* rows are atleast 100 tall up to auto tall */
+  grid-template-areas:
+    "topL topLm"
+    "botL botLm";
+  justify-items: center;
+  align-items: center;
+  object-fit: contain;
+  row-gap: 3rem;
+  column-gap: 4.5rem;
+}
+#project1BottomSectionGrid2 {
+  display: grid;
+  grid-template-columns: 13rem 13rem; /* 3 columns, all atleast 300px wide */
+  grid-auto-rows: auto;
+  /* rows are atleast 100 tall up to auto tall */
+  grid-template-areas:
+    "topRm topR"
+    "botRm botR";
+  justify-items: center;
+  align-items: center;
+  object-fit: contain;
+  row-gap: 3rem;
+  column-gap: 4.5rem;
+}
+.project1LastDiagramGridItem {
+  width: 13rem;
+  height: 30rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#project1BottomSectionFrontImage {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 15.0625rem;
+  height: 35.125rem;
+  border-radius: 0.9375rem;
+  border: 0.3rem solid #000;
+}
+
+#project1LastSection {
+  background: #ffffff;
+  padding-top: 3rem;
+  margin-left: 15rem;
+  padding-right: 5rem;
+  padding-bottom: 8rem;
 }
