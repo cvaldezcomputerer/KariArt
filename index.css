@@ -15,6 +15,30 @@ ul {
   margin-top: 0;
 }
 
+h1 {
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+h2 {
+  color: #000;
+
+  font-size: 2.8125rem;
+
+  font-weight: 700;
+}
+
+h3 {
+  color: #000;
+
+  font-size: 2.1875rem;
+
+  font-weight: 700;
+}
+
+/* so that out bullet point lists at the end of the projects look right */
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -34,6 +58,7 @@ ul {
   background-color: white;
   z-index: 1000;
   padding: 20px;
+  overflow: auto;
 }
 
 .close-button {
@@ -48,27 +73,24 @@ ul {
 }
 
 .showcase {
-  width: 430px;
-  height: 373px;
+  width: 26.875rem;
+  height: 23.3125rem;
   cursor: pointer;
+  background-color: #e6e6e6;
 }
 
 .showcase-title {
   color: #000;
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 10px;
 }
 .showcase-words {
   color: #6b6b6b;
   font-family: "Lato", sans-serif;
   font-size: 15px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
 .showcase-button {
@@ -79,32 +101,21 @@ ul {
   text-align: right;
   font-family: "Lato";
   font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
 
-.title {
-  color: #000;
-  font-family: "Lato";
-  font-size: 6vh;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 500;
 }
 
 #welcome-title {
   color: #000;
   font-family: "Arial";
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
 }
 
 #intro-text {
   color: #000;
-  font-family: Laila;
+  font-family: "Laila";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -112,27 +123,19 @@ ul {
 }
 
 #my-works {
-  font-size: 40px;
+  font-size: 2.1875rem;
   font-family: "Arial";
-}
-
-#showcase-left {
-  background-color: #e4e1ba;
 }
 #showcase-left-button {
   background: #e4e3b7;
   border-color: #e4e3b7;
 }
-#showcase-middle {
-  background-color: #ede7ff;
-}
+
 #showcase-middle-button {
   background: #ede7ff;
   border-color: #ede7ff;
 }
-#showcase-right {
-  background-color: #f5f8ff;
-}
+
 #showcase-right-button {
   background: #f5f8ff;
   border-color: #f5f8ff;
@@ -200,12 +203,19 @@ ul {
   left: -5em; /* Position it at the left */
 }
 
+/*  ----------------- ----------------- -----------------project 1 code starts here -------------- ----------------- -------------------- */
+
 #myWorksText {
   color: #000;
   font-family: "Laila";
-  font-size: 4vh;
-  font-style: normal;
+  font-size: 2.1875rem;
   font-weight: 500;
+}
+#myWorksText:hover {
+  color: #000;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 900;
   line-height: normal;
 }
 
@@ -223,8 +233,6 @@ ul {
   margin-left: 5%;
   margin-right: 5%;
   flex: auto;
-  /* background-color: #6fb7ff;
-  border-style: dashed; */
 }
 
 #project1TopContent {
@@ -234,7 +242,7 @@ ul {
   grid-template-rows: 1fr;
   grid-template-areas: "image text";
   margin-left: 5%;
-  margin-right: 5%;
+
   padding-left: 14em;
   align-items: center;
 }
@@ -275,7 +283,7 @@ ul {
   margin-bottom: 5%;
 }
 .project1Description {
-  font-size: 2vw;
+  font-size: 1.875rem;
   font-weight: 400;
   margin-top: 0px;
   flex: auto;
@@ -494,4 +502,222 @@ ul {
   margin-left: 15rem;
   padding-right: 5rem;
   padding-bottom: 8rem;
+}
+
+/*-------------------------------------------------- project 3 css------------------------------------------------------- */
+
+#project3Top {
+  background: #ebebeb;
+  background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 86%, #fbfbfb 50%);
+}
+#project3TopContent {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+  margin-left: 6rem;
+  margin-right: 8rem;
+}
+
+#project3TopContentText {
+  flex-basis: 42rem;
+}
+
+#project3TopContentImg {
+  max-width: 16rem;
+}
+/*---------------------project 3 section 2----------------------- */
+#project3DesignProcess {
+  background: #fbfbfb;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "title title title title"
+    "desc desc desc desc"
+    "card1 card2 card3 card4";
+  justify-items: center;
+  align-items: center;
+  /* row-gap: 3rem;
+  column-gap: 4.5rem;  */
+  width: 100%;
+  padding-bottom: 7rem;
+}
+
+#project3DesignProcess h2 {
+  grid-area: title;
+  align-self: start;
+  margin-top: 0;
+}
+
+#project3DesignProcess h3 {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+#project3DesignProcess p {
+  grid-area: desc;
+  margin-bottom: 5rem;
+}
+
+#project3DesignProcess div {
+  border-radius: 1.0625rem;
+  border: 15px solid #fce0ab;
+  background: #fce0ab;
+  width: 15.9375rem;
+  height: 13.375rem;
+  flex-shrink: 0;
+  text-align: center;
+}
+#project3DesignProcess ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.25rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+#project3DesignProcess li {
+  font-size: 1.25rem;
+  padding-top: 0.4rem;
+}
+
+/*---------------------project 3 section 3----------------------- */
+
+#project3Section3 {
+  margin-top: 10rem;
+  background: #fff;
+  padding-inline: 12.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#project3Section3UserStoriesImg {
+  width: 50.75rem;
+  height: 46.1875rem;
+  align-self: center;
+}
+
+#styleGuideColorsShowcase {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 50rem;
+  align-self: center;
+}
+#styleGuideColorsShowcase div {
+  width: 8.0625rem;
+  height: 10.5rem;
+  border-radius: 1.0625rem;
+}
+
+#project3TypographyBox {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rem;
+}
+
+.Poppins {
+  font-family: "Poppins";
+}
+.bigLetters {
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+#project3TypographyBox div:first-of-type {
+  flex-basis: 20rem;
+  font-weight: 300;
+  /* figure out how make make this apply */
+}
+
+#project3TypographyBox div:last-of-type {
+  padding-top: 0.5rem;
+}
+
+.lightGray {
+  color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+}
+
+#project3Section4 {
+  margin-top: 3rem;
+  padding-block: 6rem;
+  background: rgba(204, 204, 204, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-inline: 4rem;
+}
+
+#project3Section5 {
+  /* padding-block: 6rem; */
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  padding-left: 6rem;
+  padding-right: 4rem;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+#project3Section5LeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-top: 16rem;
+}
+#project3Section5RightSide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2.5rem;
+}
+
+#sideBySideImagesP3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+#project3Section5 img {
+  max-width: 24.375rem;
+}
+
+#project3Section6 {
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  padding-inline: 6rem;
+}
+
+#project3Section6 img {
+  max-width: 17rem;
+}
+
+#project3Section7 {
+  background: rgb(255, 255, 255);
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 8rem;
+}
+#project3Section7Images {
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+#project3Section7Images img {
+  max-width: 17rem;
+}
+
+#project3Section7 div:last-of-type {
+  margin-block: 5rem;
 }

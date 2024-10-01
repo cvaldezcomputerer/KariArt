@@ -58,7 +58,7 @@ for (let i = 0; i < hoverElements.length; i++) {
     switch (elementId) {
       case "showcase-middle":
         content.innerHTML =
-          '<div id="showcase-middle" class="d-flex col-12 justify-content-center align-items-center">' +
+          '<div style ="background-color: #e6e6e6;" class="d-flex col-12 justify-content-center align-items-center">' +
           '<img src="main.png" alt="showcased image" class="img-fluid " id="computer-screen">' +
           "</div>" +
           '<div class=" px-5 mt-5">' +
@@ -69,7 +69,7 @@ for (let i = 0; i < hoverElements.length; i++) {
         break;
       case "showcase-right":
         content.innerHTML =
-          '<div id="showcase-right" class="d-flex col-12 justify-content-center align-items-center">' +
+          '<div style ="background-color: #e6e6e6;" class="d-flex col-12 justify-content-center align-items-center">' +
           '<img src="image 71.png" alt="showcased image" class="img-fluid " id="right-phone-image">' +
           "</div>" +
           '<div class=" px-5 mt-4">' +
@@ -80,7 +80,7 @@ for (let i = 0; i < hoverElements.length; i++) {
         break;
       case "showcase-left":
         content.innerHTML =
-          '<div id="showcase-left" class="d-flex col-12 justify-content-center align-items-center">' +
+          '<div style ="background-color: #e6e6e6;"class="d-flex col-12 justify-content-center align-items-center">' +
           '<div class="left-phone-gif"><p id="left-phone-text-showcase">let’s start your<br>study session!</p></div>' +
           "</div>" +
           '<div class=" px-5 mt-5">' +
