@@ -75,7 +75,7 @@ for (let i = 0; i < hoverElements.length; i++) {
           '<div class=" px-5 mt-4">' +
           '<p class="showcase-title">Mama’s Kitchen</p>' +
           '<p class="showcase-words">Mama’s Kitchen is a meal keeper mobile app concept to assist students who are frustrated by their inability to save money because of excessive spending on dining out.</p>' +
-          '<button class="btn align-self-start showcase-button">View Project</button>' +
+          '<a href="project1.html"<button class="btn align-self-start showcase-button">View Project</button></a>' +
           "</div>";
         break;
       case "showcase-left":
