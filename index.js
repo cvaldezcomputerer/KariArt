@@ -64,7 +64,7 @@ for (let i = 0; i < hoverElements.length; i++) {
           '<div class=" px-5 mt-5">' +
           '<p class=" showcase-title">YoCo</p>' +
           '<p class=" showcase-words">YoCo is a website built for a teacher who wants to start her own online teaching business. It focused on immigrants from Spanish speaking countries starting a new life</p>' +
-          '<button class=" btn align-self-start showcase-button">View Project</button>' +
+          '<a href="project3.html"<button class="btn align-self-start showcase-button">View Project</button></a>' +
           "</div>";
         break;
       case "showcase-right":
@@ -75,7 +75,7 @@ for (let i = 0; i < hoverElements.length; i++) {
           '<div class=" px-5 mt-4">' +
           '<p class="showcase-title">Mama’s Kitchen</p>' +
           '<p class="showcase-words">Mama’s Kitchen is a meal keeper mobile app concept to assist students who are frustrated by their inability to save money because of excessive spending on dining out.</p>' +
-          '<a href="project1.html"<button class="btn align-self-start showcase-button">View Project</button></a>' +
+          '<a href="project3.html"<button class="btn align-self-start showcase-button">View Project</button></a>' +
           "</div>";
         break;
       case "showcase-left":
