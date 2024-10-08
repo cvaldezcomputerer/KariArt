@@ -507,7 +507,6 @@ h3 {
 /*-------------------------------------------------- project 3 css------------------------------------------------------- */
 
 #project3Top {
-  background: #ebebeb;
   background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 86%, #fbfbfb 50%);
 }
 #project3TopContent {
@@ -721,4 +720,92 @@ h3 {
 
 #project3Section7 div:last-of-type {
   margin-block: 5rem;
+}
+
+/*---------------------project 2 section 1--------------------------------------------------------------- */
+
+#project2Section1 {
+  background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 90%, #ffffff 50%);
+}
+#project2Section1Content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+  margin-left: 6rem;
+  margin-right: 1rem;
+  height: 30rem;
+}
+
+#project2Section1Text {
+  flex-basis: 42rem;
+  padding-left: 5rem;
+}
+
+#project2Section1Img {
+  align-self: flex-end;
+}
+
+/*---------------------project 2 section 2--------------------------------------------------------------- */
+
+#project2Section2 {
+  padding-left: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#Section2DiagramImg {
+  width: 69.0625rem;
+  margin-left: -3rem;
+  margin-bottom: 3rem;
+}
+
+/* since the images kind of stick out of the flex box to the left, we usede transform */
+#project2Section2Images2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 3rem;
+  align-items: flex-start;
+  transform: translateX(-3rem);
+  margin-bottom: 3.5rem;
+}
+
+#project2Section2Images2 img {
+  max-width: 22rem;
+}
+
+#project2Section2Images3 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 3rem;
+  transform: translateX(-3rem);
+  margin-bottom: 3.5rem;
+}
+#project2Section2Images3 img {
+  max-width: 23rem;
+}
+
+/* last set of images */
+#project2Section2Images4 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  margin-top: 3rem;
+  /* align-items: flex-start; */
+  margin-bottom: 3.5rem;
+}
+#project2Section2Images4 img {
+  max-width: 26rem;
+}
+
+#leftSideImagePrj2Bottom {
+  width: 25.6875rem;
+  height: 29.4375rem;
+}
+
+#veriticalImageBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
