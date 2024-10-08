@@ -64,7 +64,7 @@ for (let i = 0; i < hoverElements.length; i++) {
           '<div class=" px-5 mt-5">' +
           '<p class=" showcase-title">YoCo</p>' +
           '<p class=" showcase-words">YoCo is a website built for a teacher who wants to start her own online teaching business. It focused on immigrants from Spanish speaking countries starting a new life</p>' +
-          '<a href="project3.html"<button class="btn align-self-start showcase-button">View Project</button></a>' +
+          '<a href="project2.html"<button class="btn align-self-start showcase-button">View Project</button></a>' +
           "</div>";
         break;
       case "showcase-right":
