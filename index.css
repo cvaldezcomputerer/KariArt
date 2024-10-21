@@ -37,179 +37,47 @@ h3 {
   font-weight: 700;
 }
 
-/* so that out bullet point lists at the end of the projects look right */
-
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-}
-.popup-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: 85%;
-  background-color: white;
-  z-index: 1000;
-  padding: 20px;
-  overflow: auto;
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1001;
-  width: 55px;
-  height: 52px;
-  border: none;
-  background-color: white;
-}
-
-.showcase {
-  width: 26.875rem;
-  height: 23.3125rem;
-  cursor: pointer;
-  background-color: #e6e6e6;
-}
-
-.showcase-title {
+h5 {
   color: #000;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
+
+  font-size: 1.25rem;
+
   font-weight: 700;
-  margin-bottom: 10px;
-}
-.showcase-words {
-  color: #6b6b6b;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
 }
 
-.showcase-button {
-  border-radius: 50px;
-  border: 1px solid #000;
-  padding: 10px 20px;
-  color: #000;
-  text-align: right;
-  font-family: "Lato";
-  font-size: 15px;
-
-  font-weight: 500;
+a {
+  text-decoration: none;
 }
-
-#welcome-title {
+/* #welcome-title {
   color: #000;
   font-family: "Arial";
   font-size: 40px;
 
   font-weight: 400;
-}
+} */
 
-#intro-text {
+/* #intro-text {
   color: #000;
   font-family: "Laila";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-}
+  line-height: normal; 
+}*/
 
-#my-works {
+/* so that out bullet point lists at the end of the projects look right */
+
+/* #my-works {
   font-size: 2.1875rem;
   font-family: "Arial";
-}
-#showcase-left-button {
-  background: #e4e3b7;
-  border-color: #e4e3b7;
-}
-
-#showcase-middle-button {
-  background: #ede7ff;
-  border-color: #ede7ff;
-}
-
-#showcase-right-button {
-  background: #f5f8ff;
-  border-color: #f5f8ff;
-}
-
-.left-phone-gif {
-  border-radius: 15px;
-  position: relative;
-  width: 104px;
-  height: 243px;
-  border: 5px solid #000;
-  background: url(plantGif.gif) lightgray 50% / cover no-repeat;
-}
-
-#computer-screen {
-  width: 299px;
-  height: 197px;
-  position: cover;
-}
-
-#right-phone-image {
-  width: 116px;
-  height: 251px;
-  object-fit: cover;
-}
-
-#left-phone-text-showcase {
-  border-radius: 64px;
-  background: #f6d388;
-  color: #000;
-  font-family: "Lato";
-  font-size: 0.6rem;
-
-  font-weight: 400;
-
-  width: 120%;
-  height: 20%;
-  text-align: center;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  transform: translate(-5rem, 13rem);
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.left-phone-text {
-  position: absolute;
-  border-radius: 64px;
-  background: #f6d388;
-  color: #000;
-  font-family: "Lato";
-  font-size: 3vh;
-  font-weight: 400;
-  width: 8em;
-  height: 4em;
-  text-align: center;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
-  padding-left: 1em;
-  padding-right: 1em;
-  bottom: -3em; /* Position it at the bottom */
-  left: -5em; /* Position it at the left */
-}
-
-/*  ----------------- ----------------- -----------------project 1 code starts here -------------- ----------------- -------------------- */
+}  ----------------- ----------------- -----------------project ? code starts here -------------- ----------------- -------------------- */
 
 #myWorksText {
   color: #000;
-  font-family: "Laila";
+  font-family: "Lato", sans-serif;
   font-size: 2.1875rem;
   font-weight: 500;
+  text-decoration: none;
 }
 #myWorksText:hover {
   color: #000;
@@ -217,13 +85,28 @@ h3 {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  text-decoration: none;
 }
 
-#project1Top {
-  background: #ebebeb;
+#nextProjectText {
   display: flex;
-  flex-direction: column;
-  position: relative;
+  align-self: center;
+  justify-content: center;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 2.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 5rem;
+}
+
+#nextProjectText:hover {
+  color: #000;
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-decoration: none;
 }
 
 #topWords {
@@ -233,6 +116,14 @@ h3 {
   margin-left: 5%;
   margin-right: 5%;
   flex: auto;
+  padding-top: 1rem;
+}
+
+#project1Top {
+  background: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 #project1TopContent {
@@ -253,7 +144,8 @@ h3 {
   width: 27vh;
   border-radius: 30px;
   border: 0.6em solid #000;
-  background: url(plantGif.gif) lightgray 50% / cover no-repeat;
+  background: url(docs/assets/images/homePage/plantGif.gif) lightgray 50% /
+    cover no-repeat;
   position: relative;
 }
 
@@ -808,4 +700,141 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+/*---------------------home page redo----     ----------------------------------------------------------- */
+#homePageSection1 {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: flex-start;
+  gap: 6rem;
+  align-items: center;
+  margin-left: 6rem;
+}
+
+#homePageSection2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+#homePageMyWorks {
+  padding-left: 3.75rem;
+  margin-bottom: 9rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.homePageSection2Item {
+  display: flex;
+  width: 26.875rem;
+  height: 23.3125rem;
+  background: #e6e6e6;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  position: relative;
+}
+
+.homePageSection2Item img:first-of-type {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+.homePageSection2Item img:last-of-type {
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+  position: absolute; /* Position the image absolutely within the div */
+  top: -24%; /* Position at the top */
+  right: 0; /* Position at the right */
+}
+
+.homePageSection2Item:hover img:last-of-type {
+  opacity: 1; /* Show the image on hover */
+}
+.homePageSection2Item:hover {
+  transform: translateY(-20px); /* Move the div up by 20px */
+}
+
+/* The Modal (hidden by default) -----------------------------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 5% auto;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  width: 38%;
+  height: 40rem;
+  position: relative;
+}
+
+#modalTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebebeb;
+  width: 100%;
+  height: 23.1875rem;
+}
+#modalBot {
+  margin-top: 2rem;
+  margin-left: 3.5rem;
+  margin-right: 3rem;
+}
+
+#modalImg {
+  max-width: 100%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+}
+
+#close {
+  font-size: 1.4rem;
+
+  position: absolute;
+  background-color: #ffffff;
+  right: 0.5rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.8rem;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+#modalHeader {
+  margin-bottom: 0;
+}
+
+#modalText {
+  color: #6b6b6b;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+#modalButton {
+  border-radius: 3.125rem;
+  border: 1px solid #000;
+  padding: 0.625rem 1.25rem;
+  color: #000;
+  background-color: #ffffff;
+  text-align: right;
+  font-family: "Lato";
+  font-size: 0.9375rem;
+  text-decoration: none;
 }
