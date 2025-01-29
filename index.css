@@ -1,7 +1,66 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
 body,
 html {
-  margin: 0;
-  overflow-x: hidden;
   font-family: "Lato";
 }
 
@@ -48,141 +107,52 @@ h5 {
 a {
   text-decoration: none;
 }
-/* #welcome-title {
+
+/*  ----------------- ----------------- ----------------buddy-------------- ----------------- -------------------- */
+
+.projectTitle {
   color: #000;
-  font-family: "Arial";
-  font-size: 40px;
-
-  font-weight: 400;
-} */
-
-/* #intro-text {
-  color: #000;
-  font-family: "Laila";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal; 
-}*/
-
-/* so that out bullet point lists at the end of the projects look right */
-
-/* #my-works {
-  font-size: 2.1875rem;
-  font-family: "Arial";
-}  ----------------- ----------------- -----------------project ? code starts here -------------- ----------------- -------------------- */
-
-#myWorksText {
-  color: #000;
-  font-family: "Lato", sans-serif;
-  font-size: 2.1875rem;
-  font-weight: 500;
-  text-decoration: none;
+  font-size: 9.375rem;
+  font-weight: 700;
 }
-#myWorksText:hover {
-  color: #000;
-  font-size: 2.1875rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  text-decoration: none;
-}
-
-#nextProjectText {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  color: #000;
-  font-family: "Lato", sans-serif;
-  font-size: 2.8125rem;
-  font-weight: 500;
-  text-decoration: none;
-  padding-bottom: 5rem;
-}
-
-#nextProjectText:hover {
-  color: #000;
-  font-size: 2.8125rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  text-decoration: none;
-}
-
-#topWords {
-  display: flex;
-  justify-content: space-between; /* Space out the text elements */
-  align-items: center; /* Center the text vertically */
-  margin-left: 5%;
-  margin-right: 5%;
-  flex: auto;
-  padding-top: 1rem;
-}
-
-#project1Top {
-  background: #ebebeb;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-#project1TopContent {
-  /* border-style: dashed;  - for testing*/
-  display: grid;
-  grid-template-columns: 0.5fr 1.5fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "image text";
-  margin-left: 5%;
-
-  padding-left: 14em;
-  align-items: center;
-}
-
-.left-image {
-  grid-area: image;
-  height: 65vh;
-  width: 27vh;
-  border-radius: 30px;
-  border: 0.6em solid #000;
-  background: url(docs/assets/images/homePage/plantGif.gif) lightgray 50% /
-    cover no-repeat;
-  position: relative;
-}
-
-.right-text {
-  grid-area: text;
-  color: #000;
-  font-family: "Lato";
-  line-height: normal;
-  margin-left: 15%;
-}
-
-#project1TopPlant {
-  background: url(plantHi.gif) 50% / cover no-repeat;
-  width: 22vw;
-  height: 22.5vw;
-  transform: rotate(-0.226deg);
-  align-self: flex-end;
-  margin-right: 10em;
-  margin-top: -8em;
-  margin-bottom: 0;
-  flex-shrink: 1;
-}
-
-#project1Title {
+.projectHeader {
   font-size: 2.8vw;
   font-weight: 700;
-  margin-bottom: 5%;
+  margin-bottom: 1rem;
 }
-.project1Description {
+.projectDescription {
   font-size: 1.875rem;
   font-weight: 400;
   margin-top: 0px;
   flex: auto;
+  margin-bottom: 5rem;
 }
 
+#buddySection1 {
+  padding-top: 5rem;
+}
+
+.projectTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+#buddyTopImages {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+#buddyTopImages img {
+  width: 100%;
+  height: auto;
+}
 /* first projext css */
-#project1MiddleSectionContent {
+#buddyContentSection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -191,210 +161,138 @@ a {
   background: #ffffff;
   margin-bottom: 4rem;
 }
-.project1Heading {
-  color: #000;
-  font-size: 2.25vw;
-  font-weight: 700;
-  flex-shrink: 1;
+
+#goalsExtractedImages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: 5rem;
 }
 
-#personDataImage {
-  align-self: center;
-  margin-block: 2rem;
-  width: 55vw;
-  flex: auto;
-}
-
-.listTitle {
-  color: #000;
-  font-size: 2.25vw;
-  font-weight: 700;
-  flex-shrink: 1;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0;
-}
-
-#project1MiddleSectionImage {
-  width: 50vw;
-  align-self: center;
-  flex: auto;
-}
-
-#project1GameSectionVisials {
-  margin-top: 3rem;
+#goalsExtractedImages div {
+  width: 25.1875rem;
+  height: 34.3125rem;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
-  gap: 3rem;
-
-  flex: auto;
-}
-#projext1GameSectionVisialphone {
-  width: 15vw;
-  position: relative;
-  box-shadow: #000;
-}
-#projext1GameSectionVisialphoneGif {
-  width: 7vw;
-  position: absolute;
-  transform: translate(4rem, -0.5rem);
-}
-.project1GameSectionVisialsText {
-  text-align: center;
-  font-size: 3vh;
-  font-weight: 700;
+  justify-content: center;
 }
 
-.projext1GameSectionVisialImg {
-  width: 11vw;
+#goalsExtractedImages1 {
+  background-color: #f9dcda;
 }
 
-#project1GameSectionVisials2 {
-  margin-top: 4rem;
+#goalsExtractedImages2 {
+  background-color: #fff0d8;
+}
+
+#goalsExtractedImages img {
+  width: 12rem;
+  height: auto;
+}
+
+#buddyGamificationSection {
   display: flex;
-  justify-content: space-around;
-  flex: auto;
+  justify-content: space-between;
+  margin-bottom: 5rem;
   width: 100%;
-  gap: 4rem;
 }
 
-.projext1GameSectionVisials2Img {
+#buddyGamificationSectionLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+#buddyGamificationSectionLeft div {
+  width: 19.6875rem;
+  height: 22.125rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buddyGamificationSectionLeft img {
+  width: 12rem;
+  height: auto;
+}
+
+#buddyGamificationSectionRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#buddyGamificationSectionRight div {
+  width: 25.1875rem;
+  height: 34.3125rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#buddyGamificationSectionRight img,
+video {
   width: 13.8125rem;
   height: 29.0625rem;
   border-radius: 0.9375rem;
   border: 5px solid #000;
 }
 
-#project1BulletPoints {
-  margin-top: 8rem;
-  padding-left: 4rem;
+#buddyGamificationSectionLeft div:nth-child(1) {
+  background-color: #fff0d8; /* First div background color */
+}
+
+#buddyGamificationSectionLeft div:nth-child(2) {
+  background-color: #fdf1f0; /* First div background color */
+}
+
+#buddyGamificationSectionLeft div:nth-child(3) {
+  background-color: #f9dcda; /* First div background color */
+}
+
+#buddyGamificationSectionRight div:nth-child(1) {
+  background-color: #fdf1f0; /* Second div background color */
+}
+
+#buddyGamificationSectionRight div:nth-child(2) {
+  background-color: #ffeed8; /* Third div background color */
+}
+
+/* .project1Heading {
+  color: #000;
+  font-size: 2.25vw;
+  font-weight: 700;
+  flex-shrink: 1;
+} */
+
+#personDataImage {
+  align-self: center;
+  width: 55vw;
   flex: auto;
-  text-indent: -1.5rem;
+  margin-bottom: 5rem;
 }
 
-/* second to last sections */
-#project1secondToLastDiagram {
-  display: grid;
-  grid-template-columns: 0.7fr 1fr 0.7fr; /* 3 columns, all atleast 300px wide */
-  grid-auto-rows: 1fr 1fr 1fr;
-  /* rows are atleast 100 tall up to auto tall */
-  grid-template-areas:
-    "topT topT topp"
-    "midP midT midT"
-    "botPics botPics botPics";
-
-  align-items: center;
-  margin-left: -3rem; /*since tis section sticks out a bit*/
-}
-.project1secondToLastDiagramImg {
-  /*any images will fill the entire container, without cropping it.*/
-  width: 22rem;
-  object-fit: cover;
-  object-position: center;
-}
-#project1secondToLastDiagramTopText {
-  grid-area: topT; /* remmeber not to use top since its a keyword and messes everything up*/
-  /* align-self: center; */
-  justify-self: end;
-}
-#project1secondToLastDiagramTopText p {
-  padding-right: 4rem;
-}
-#project1secondToLastDiagramTopPic {
-  grid-area: topp; /* remmeber not to use top since its a keyword and messes everything up*/
-  /* justify-self: end; */
-  justify-self: center;
+#buddyBottomBigImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem;
 }
 
-#project1secondToLastDiagramMidPic {
-  grid-area: midP;
-}
-#project1secondToLastDiagramMidText {
-  grid-area: midT;
-  /* align-self: center; */
-}
-#project1secondToLastDiagramBot {
-  grid-area: botPics;
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.project1secondToLastDiagramBotFlexItem {
-  width: 20rem;
-  object-fit: contain;
-}
-
-.lineUnderP {
-  border-bottom-style: solid;
-  padding-bottom: 2rem;
-  font-size: 1.875rem;
-  width: fit-content;
-}
-
-/*-------------------- second to last section------------------------- */
-#project1BottomSectionFlex {
-  background: #e0dedb;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
-}
-
-#project1BottomSectionGrid1 {
-  display: grid;
-  grid-template-columns: 13rem 13rem; /* 3 columns, all atleast 300px wide */
-  grid-auto-rows: auto;
-  /* rows are atleast 100 tall up to auto tall */
-  grid-template-areas:
-    "topL topLm"
-    "botL botLm";
-  justify-items: center;
-  align-items: center;
-  object-fit: contain;
-  row-gap: 3rem;
-  column-gap: 4.5rem;
-}
-#project1BottomSectionGrid2 {
-  display: grid;
-  grid-template-columns: 13rem 13rem; /* 3 columns, all atleast 300px wide */
-  grid-auto-rows: auto;
-  /* rows are atleast 100 tall up to auto tall */
-  grid-template-areas:
-    "topRm topR"
-    "botRm botR";
-  justify-items: center;
-  align-items: center;
-  object-fit: contain;
-  row-gap: 3rem;
-  column-gap: 4.5rem;
-}
-.project1LastDiagramGridItem {
-  width: 13rem;
-  height: 30rem;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-#project1BottomSectionFrontImage {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 15.0625rem;
-  height: 35.125rem;
-  border-radius: 0.9375rem;
-  border: 0.3rem solid #000;
-}
-
-#project1LastSection {
-  background: #ffffff;
-  padding-top: 3rem;
-  margin-left: 15rem;
-  padding-right: 5rem;
-  padding-bottom: 8rem;
-}
+/* .listTitle {
+  color: #000;
+  font-size: 2.25vw;
+  font-weight: 700;
+  flex-shrink: 1;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+} */
 
 /*-------------------------------------------------- project 3 css------------------------------------------------------- */
 
@@ -616,225 +514,206 @@ a {
 
 /*---------------------project 2 section 1--------------------------------------------------------------- */
 
-#project2Section1 {
-  background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 90%, #ffffff 50%);
-}
-#project2Section1Content {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 7rem;
-  margin-left: 6rem;
-  margin-right: 1rem;
-  height: 30rem;
-}
-
-#project2Section1Text {
-  flex-basis: 42rem;
-  padding-left: 5rem;
-}
-
-#project2Section1Img {
-  align-self: flex-end;
-}
-
-/*---------------------project 2 section 2--------------------------------------------------------------- */
-
-#project2Section2 {
-  padding-left: 15rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#Section2DiagramImg {
-  width: 69.0625rem;
-  margin-left: -3rem;
-  margin-bottom: 3rem;
-}
-
-/* since the images kind of stick out of the flex box to the left, we usede transform */
-#project2Section2Images2 {
-  display: flex;
-  justify-content: flex-start;
-  gap: 3rem;
-  margin-top: 3rem;
-  align-items: flex-start;
-  transform: translateX(-3rem);
-  margin-bottom: 3.5rem;
-}
-
-#project2Section2Images2 img {
-  max-width: 22rem;
-}
-
-#project2Section2Images3 {
-  display: flex;
-  justify-content: flex-start;
-  gap: 3rem;
-  margin-top: 3rem;
-  transform: translateX(-3rem);
-  margin-bottom: 3.5rem;
-}
-#project2Section2Images3 img {
-  max-width: 23rem;
-}
-
-/* last set of images */
-#project2Section2Images4 {
-  display: flex;
-  justify-content: flex-start;
-  gap: 5rem;
-  margin-top: 3rem;
-  /* align-items: flex-start; */
-  margin-bottom: 3.5rem;
-}
-#project2Section2Images4 img {
-  max-width: 26rem;
-}
-
-#leftSideImagePrj2Bottom {
-  width: 25.6875rem;
-  height: 29.4375rem;
-}
-
-#veriticalImageBox {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 /*---------------------home page redo----     ----------------------------------------------------------- */
-#homePageSection1 {
+
+#homePage {
+  background: url("docs/assets/images/homePage/home/homePaheBackround.png") 0%
+      0% / 500px 500px repeat,
+    #ffe7e5;
+}
+.homePageSection1 {
+  height: 100vh;
+  padding-top: 5rem;
+}
+#navBar {
+  border-radius: 6.25rem;
+  background: #fff7f8;
   display: flex;
-  margin-top: 4rem;
-  justify-content: flex-start;
-  gap: 6rem;
-  align-items: center;
-  margin-left: 6rem;
+  min-width: 400px;
+  margin-inline: 30rem;
+  margin-bottom: 10rem;
+  justify-content: space-between;
+}
+#navBar button {
+  flex: 1;
+  font-size: 1.875rem;
+  background: #fff7f8;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 6.25rem;
+}
+
+#HomePageHomeTop {
+  padding-inline: 24rem;
+  color: #301c16;
+  font-family: "Lato";
+  font-size: clamp(2rem, 6.5vw, 6.25rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 #homePageSection2 {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  background: #fffcfb;
 }
 
-#homePageMyWorks {
-  padding-left: 3.75rem;
-  margin-bottom: 9rem;
-  font-weight: 400;
-  font-size: 2.5rem;
+#portfolioCardTitle h2 {
+  margin-bottom: 4rem;
 }
 
-.homePageSection2Item {
+#portfolioCardContainer {
   display: flex;
-  width: 26.875rem;
-  height: 23.3125rem;
-  background: #e6e6e6;
-  justify-content: center; /* Horizontally center the image */
-  align-items: center; /* Vertically center the image */
-  position: relative;
+  justify-content: center;
+  gap: 2rem; /* Add gap between cards */
+  padding: 0 6rem; /* Add padding to the container */
+}
+.portfolioCard {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #fdf1f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-inline: 2.5rem;
+  padding-block: 2rem;
+  border-radius: 1rem;
 }
 
-.homePageSection2Item img:first-of-type {
-  max-width: 60%;
+.portfolioCardImageContainer {
+  margin-bottom: 2rem;
+  margin-inline: auto;
+  /* Set a specific width for the image container */
+}
+
+.portfolioCardTextContainer {
+  margin-bottom: 4rem;
+}
+.portfolioCard img {
+  max-width: 150px;
   height: auto;
-  object-fit: cover;
+  border-radius: 1rem;
+  align-self: center;
+  /* margin-bottom: 1.5rem; */
+}
+.portfolioCard h5 {
+  color: #3b1703;
+  margin-bottom: 0.5rem;
+}
+.portfolioCard p {
+  color: #3b1703;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.portfolioCard a {
+  margin-top: auto;
+  color: #3b1703;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
 }
 
-.homePageSection2Item img:last-of-type {
-  opacity: 0; /* Initially hide the image */
-  transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
-  position: absolute; /* Position the image absolutely within the div */
-  top: -24%; /* Position at the top */
-  right: 0; /* Position at the right */
+.portfolioCard a:hover {
+  color: #f16363; /* Change text color on hover */
 }
 
-.homePageSection2Item:hover img:last-of-type {
-  opacity: 1; /* Show the image on hover */
-}
-.homePageSection2Item:hover {
-  transform: translateY(-20px); /* Move the div up by 20px */
+.portfolioCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* The Modal (hidden by default) -----------------------------------------*/
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+/*---------------------home page about section--------------------------------------------------------------- */
+#homePageAboutTop {
+  display: flex;
+  color: #301c16;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-inline: 6rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.modal-content {
-  background-color: #ffffff;
-  margin: 5% auto;
-  padding-inline: 1rem;
-  padding-block: 0.8rem;
-  width: 38%;
-  height: 40rem;
-  position: relative;
+#homePageAboutTop h1 {
+  font-size: 6.25rem;
+  font-weight: 400;
+}
+#homePageAboutTop img {
+  width: 69%;
+  height: auto;
+  border-radius: 15rem;
+}
+#homePageAboutTopLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+#homePageAboutTopRight {
+  flex: 1;
 }
 
-#modalTop {
+#homePageHomeSection2 {
+  background: #fffcfb;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 8rem;
+  padding-inline: 13rem;
+  padding-bottom: 8rem;
+}
+
+#homePageHomeSection2 p {
+  color: #301c16;
+
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#homePageHomeSection2Video {
+  width: 45.4375rem;
+  height: 26.9375rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#homePageHomeSection2SidebysideImages {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+#homePageHomeSection2SidebysideImagesLeft {
+  flex: 1;
+}
+#homePageHomeSection2SidebysideImagesLeft img {
+  max-width: 100%;
+  height: auto;
+}
+#homePageHomeSection2SidebysideImagesight {
+  flex: 1;
+}
+
+#homePageHomeSection2SidebysideImagesight img {
+  max-width: 100%;
+  height: auto;
+}
+
+.compltedGoal {
+  text-decoration: line-through;
+}
+
+/* set img elements to display: block; width: 100%;
+ height: auto; as a global default 
+ Then I use the parent element to constrain that and dictate the size*/
+
+#cvPage {
+}
+.pdfContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ebebeb;
-  width: 100%;
-  height: 23.1875rem;
-}
-#modalBot {
-  margin-top: 2rem;
-  margin-left: 3.5rem;
-  margin-right: 3rem;
-}
-
-#modalImg {
-  max-width: 100%;
-  max-height: 80%;
-  width: auto;
-  height: auto;
-}
-
-#close {
-  font-size: 1.4rem;
-
-  position: absolute;
-  background-color: #ffffff;
-  right: 0.5rem;
-  padding-inline: 1.5rem;
-  padding-block: 0.8rem;
-}
-
-#close:hover,
-#close:focus {
-  color: #000;
-  cursor: pointer;
-}
-
-#modalHeader {
-  margin-bottom: 0;
-}
-
-#modalText {
-  color: #6b6b6b;
-  font-family: "Lato", sans-serif;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-
-#modalButton {
-  border-radius: 3.125rem;
-  border: 1px solid #000;
-  padding: 0.625rem 1.25rem;
-  color: #000;
-  background-color: #ffffff;
-  text-align: right;
-  font-family: "Lato";
-  font-size: 0.9375rem;
-  text-decoration: none;
 }
