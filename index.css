@@ -690,21 +690,28 @@ h5 {
   font-weight: 400;
 }
 
-#homePageHomeSection2Video {
-  width: 45.4375rem;
-  height: 26.9375rem;
+#homePageHomeSection2VideoContainer {
+  display: flex;
+  align-self: center;
+  width: 80%;
+  height: 50vh;
+
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+#homePageHomeSection2VideoContainer iframe {
+  width: 100%;
+  height: 100%;
 }
 
 #homePageHomeSection2SidebysideImages {
   display: flex;
   margin-top: 3rem;
   margin-bottom: 3.5rem;
-  gap: 5rem;
+  gap: 4rem;
 }
 #homePageHomeSection2SidebysideImagesLeft {
-  flex: 1;
+  flex: 1.2;
 }
 #homePageHomeSection2SidebysideImagesLeft img {
   width: 100%;
