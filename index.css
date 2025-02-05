@@ -92,8 +92,7 @@ h5 {
 
 /*  ----------------- ----------------- ----------------buddy-------------- ----------------- -------------------- */
 
-/* Basic styling for the links */
-/* Updated links styling to match site aesthetic */
+/* styling for project pages footer */
 .links {
   margin: 5rem auto 2rem; /* Top margin pushes it down */
   background-color: #fff7f8;
@@ -157,10 +156,6 @@ h5 {
   justify-content: center;
   text-align: center;
   margin-bottom: 5rem;
-}
-
-#mamasSection1 {
-  padding-top: 5rem;
 }
 
 #buddySection1 {
@@ -264,8 +259,14 @@ h5 {
   align-items: center;
   justify-content: center;
 }
-#buddyGamificationSectionRight img,
-video {
+
+#buddyGamificationSectionRight img {
+  width: 13.8125rem;
+  height: 29.0625rem;
+  border-radius: 0.9375rem;
+  border: 5px solid #000;
+}
+#buddyvideo {
   width: 13.8125rem;
   height: 29.0625rem;
   border-radius: 0.9375rem;
@@ -305,7 +306,11 @@ video {
   margin-bottom: 5rem;
 }
 
-/*-------------------------------------------------- project 3 css------------------------------------------------------- */
+/*-------------------------------------------------- mamas css------------------------------------------------------- */
+
+#mamasSection1 {
+  padding-top: 5rem;
+}
 
 #mamasTopMedia {
   display: flex;
@@ -422,7 +427,7 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 4rem;
 }
 
 /* remove the bottom margins from the paragraphs to make less confusing */
@@ -460,7 +465,54 @@ video {
 #mamasBottomSectionBottomImages div {
   flex: 1;
 }
-/*---------------------project 2 section 1--------------------------------------------------------------- */
+/*---------------------mamas done takko takko next--------------------------------------------------------------- */
+
+#takkoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#takkoWebsiteShowcaseVideoContainer {
+  display: flex;
+  margin-inline: 12rem;
+  border: 29px solid #afaaaa46;
+  border-radius: 5rem;
+  margin-bottom: 5rem;
+}
+
+#takkoWebsiteShowcaseVideoContainer video {
+  flex: 1;
+  border-radius: 2rem;
+}
+
+.takkoText {
+  margin-inline: 12rem;
+  margin-bottom: 5rem;
+}
+#takkoWebsiteShowcaseIframeContainer {
+  display: flex;
+  margin-bottom: 5rem;
+  width: 80%;
+}
+
+#takkoWebsiteShowcaseIframeContainer iframe {
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+
+#takkoInteractiveGameImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-inline: 12rem;
+}
+
+#takkoInteractiveGameImageContainer img {
+  width: 100%;
+  height: auto;
+  flex: 1;
+}
 
 /*---------------------home page redo----     ----------------------------------------------------------- */
 
