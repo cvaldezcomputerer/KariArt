@@ -493,6 +493,7 @@ h5 {
   display: flex;
   margin-bottom: 5rem;
   width: 80%;
+  height: 80vh;
 }
 
 #takkoWebsiteShowcaseIframeContainer iframe {
@@ -514,20 +515,11 @@ h5 {
   flex: 1;
 }
 
-/*---------------------home page redo----     ----------------------------------------------------------- */
+/*---------------------home page redo----    --- --- --- --- --- --- ---  ----------------------------------------------------------- */
 
-#homePage {
-  background: url("docs/assets/images/homePage/home/homePaheBackround.png") 0%
-      0% / 500px 500px repeat,
-    #ffe7e5;
-}
-.homePageSection1 {
-  height: 100vh;
-  padding-top: 5rem;
-}
 #navBar {
   border-radius: 6.25rem;
-  background: #fff7f8;
+  background: #fffcfb;
   display: flex;
   min-width: 400px;
   margin-inline: 30rem;
@@ -536,58 +528,52 @@ h5 {
 }
 #navBar button {
   font-size: 1.875rem;
-  background: #fff7f8;
+  background: #fffcfb;
   border: none;
   padding: 0.5rem 2rem;
-  border-radius: 6.25rem;
 }
 
-.navBarProject {
-  border-radius: 6.25rem;
-  background: #fff7f8;
+#navBarHome {
+  background: #fffcfb;
   display: flex;
-  min-width: 400px;
-  margin-inline: 30rem;
-  margin-bottom: 3rem;
+}
+#navBarHome button {
+  font-size: 1.875rem;
+  background: #fffcfb;
+  border: none;
+  padding: 0.5rem 2rem;
+}
+
+#homePage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 2rem;
+  background: #fffcfb;
+  padding: 2rem 6rem; /* Add padding to the container */
+}
+
+#homePageHeader {
+  flex: 1;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.navBarProject button {
-  flex: 1;
-  font-size: 1.875rem;
-  background: #fff7f8;
-  border: none;
-  padding: 0.5rem 2rem;
-  border-radius: 6.25rem;
+
+#homePageTitle {
 }
 
-#HomePageHomeTop {
-  padding-inline: 24rem;
-  color: #301c16;
+#homePageTitle h1 {
   font-family: "Lato";
   font-size: clamp(2rem, 6.5vw, 6.25rem);
   font-weight: 500;
-  min-width: 200px;
-}
-
-#homePageSection2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 8rem;
-  padding-bottom: 10rem;
-  background: #fffcfb;
-}
-
-#portfolioCardTitle h2 {
-  margin-bottom: 4rem;
 }
 
 #portfolioCardContainer {
+  flex: 1;
   display: flex;
   justify-content: center;
   gap: 2rem; /* Add gap between cards */
-  padding: 0 6rem; /* Add padding to the container */
 }
 .portfolioCard {
   display: flex;
@@ -608,11 +594,10 @@ h5 {
 }
 
 .portfolioCardTextContainer {
-  margin-bottom: 4rem;
 }
 .portfolioCard img {
   max-width: 150px;
-  height: auto;
+  max-height: 170px;
   border-radius: 1rem;
   align-self: center;
   /* margin-bottom: 1.5rem; */
@@ -642,6 +627,23 @@ h5 {
 .portfolioCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navBarProject {
+  border-radius: 6.25rem;
+  background: #ffffff;
+  display: flex;
+  min-width: 400px;
+  margin-inline: 30rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+.navBarProject button {
+  flex: 1;
+  font-size: 1.875rem;
+  background: #ffffff;
+  border: none;
+  padding: 0.5rem 2rem;
 }
 
 /*---------------------home page about section--------------------------------------------------------------- */
@@ -794,7 +796,7 @@ h5 {
 
 /* CV Page Specific Styles */
 .cv-container {
-  background: #fff7f8;
+  background: #ffffff;
   padding: 5rem 0;
 }
 

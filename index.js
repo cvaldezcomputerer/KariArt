@@ -6,15 +6,15 @@ $(document).ready(function () {
   // Check if the current file is index.html
   if (fileName === "index.html" || fileName === "") {
     // Change the border of the first homeNavBarButton
-    $(".homeNavBarButton").eq(0).css("border", "1px solid rgb(0, 0, 0)");
-    $(".homeNavBarButton").eq(0).css("background-color", "#ffffff");
+    $(".homeNavBarButton").eq(0).css("border-bottom", "2px solid rgb(0, 0, 0)");
+    $(".homeNavBarButton").eq(0).css("background-color", "#fffcfb");
   } else if (fileName === "about.html") {
     // Change the border of the second homeNavBarButton
-    $(".homeNavBarButton").eq(1).css("border", "1px solid rgb(0, 0, 0)");
-    $(".homeNavBarButton").eq(1).css("background-color", "#ffffff");
+    $(".homeNavBarButton").eq(1).css("border-bottom", "2px solid rgb(0, 0, 0)");
+    $(".homeNavBarButton").eq(1).css("background-color", "#fffcfb");
   } else if (fileName === "cv.html") {
     // Change the border of the second homeNavBarButton
-    $(".homeNavBarButton").eq(2).css("border", "1px solid rgb(0, 0, 0)");
+    $(".homeNavBarButton").eq(2).css("border-bottom", "2px solid rgb(0, 0, 0)");
     $(".homeNavBarButton").eq(2).css("background-color", "#ffffff");
     $("#navbar").css("background-color", "#FFF7F8");
   }
